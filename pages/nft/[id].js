@@ -5,7 +5,7 @@ import { ethers } from "ethers";
 import Image from "next/image";
 import axios from "axios";
 
-import Market from "../../artifacts/contracts/NFTMarket.sol/NFTMarket.json";
+import Market from "../../utils/NFTMarket.json";
 import { getTokenContract, getMarketContract } from "../../utils/contract";
 import ShareNft from "../../components/ShareNft";
 import ButtonPay from "../../components/ButtonPay";

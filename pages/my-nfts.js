@@ -8,8 +8,8 @@ import axios from "axios";
 import ShareNft from "../components/ShareNft";
 import NftCard from "../components/NftCard";
 
-import Market from "../artifacts/contracts/NFTMarket.sol/NFTMarket.json";
-import NFT from "../artifacts/contracts/NFT.sol/NFT.json";
+import Market from "../utils/NFTMarket.json";
+import NFT from "../utils/NFT.json";
 import { nftaddress, nftmarketaddress } from "../config";
 import { getProviderSigner } from "../utils/contract";
 
