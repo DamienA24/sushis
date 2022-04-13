@@ -9,7 +9,7 @@ import axios from "axios";
 import { nftaddress, nftmarketaddress } from "../../config";
 import NftCard from "../../components/NftCard";
 
-import Market from "../../artifacts/contracts/NFTMarket.sol/NFTMarket.json";
+import Market from "../../utils/NFTMarket.json";
 import { getTokenContract, getMarketContract } from "../../utils/contract";
 
 export default function NftByAccount() {

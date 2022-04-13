@@ -13,7 +13,7 @@ import Filters from "../components/Filters";
 import NftCard from "../components/NftCard";
 import Footer from "../components/Footer";
 
-import Market from "../artifacts/contracts/NFTMarket.sol/NFTMarket.json";
+import Market from "../utils/NFTMarket.json";
 import {
   getMarketContract,
   getProviderSigner,
