@@ -1,16 +1,341 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
+    background: #D8E6FA;
+}
+
+.container-global {
+    background: #D8E6FA;
+    height: 100vh;
+}
+
+.container-global-page-connect-wallet {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.title {
+  font-family: 'Sniglet';
+  font-style: normal;
+  font-weight: 400;
+  width: 400px;
+}
+
+.container-global-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-global-page-connect-wallet .margin-negative{
+ margin-top: -10px;
+}
+
+.container-global-page-connect-wallet .text-presentation {
+  text-align: center;
+}
+
+.container-global-page-connect-wallet p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 20px 0 25px 0;
+ }
+
+.container-global-description-connect-wallet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-global-items {
+  height: 90vh;
+  overflow: scroll;
+}
+
+.container-global-display-address {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+}
+
+.container-display-image-home {
+  width: 500px;
+  margin: auto;
+  margin-top: calc(40vh / 2);
+}
+
+ .container-display-address {
+  display: flex;
+  border: 4px solid #333333;
+  color: black;  
+  border-radius: 40px;
+  padding: 12px 40px;
+  margin-top: 20px;
+  width: max-content;
+  height: 60px;
+  align-items: center;
+ }
+
+.container-display-address p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+ .container-display-address span {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 10px !important;
+  }
+
+  .container-nav-first-level {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.cta-button {
+  height: 60px;
+  width: max-content;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 4px solid #333333;
+  border-radius: 40.7px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  font-family: Roboto;
 }
 
-* {
-  box-sizing: border-box;
+.connect-wallet-button {
+  background: #FDDD80;
+}
+
+.link-nav {
+  font-family: Roboto;
+  font-size: 18px;
+  color: rgba(31, 31, 31, 0.9);
+}
+
+.container-nft-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: 450px;  
+  border: solid black 4px;
+  border-radius: 35px;
+}
+
+.container-button-action-pay {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-logo-price {
+  display: flex;
+  align-items: center;
+}
+
+.container-logo-price span {
+  margin-left: 3px !important;
+}
+
+.button-action-pay {
+  padding: 8px;
+  border-radius: 40px;
+  border: 3px solid #333333;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bgBlue {
+  background: #D8E6FA;
+}
+
+.action-buy {
+  background: #1F1F1F;
+  color: #D8E6FA;
+}
+
+.accordion-button {
+  color: black !important;
+}
+.font-roboto {
+  font-family: Roboto;
+}
+
+.weight400 {
+  font-weight: 400;
+}
+
+.weight500 {
+  font-weight: 500;
+}
+
+.weight600 {
+  font-weight: 600;
+}
+
+.weight800 {
+  font-weight: 800;
+}
+
+.colorBlue {
+  color: #D8E6FA;
+}
+
+.blackColorDisabled {
+  color: rgba(33, 31, 30, 0.6);
+}
+
+.container-share-nfts {
+  width: fit-content;
+  cursor: pointer;
+  border: black solid 3px;
+  border-radius: 16px;
+  display: flex;
+  position: absolute;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+
+.classic {
+  width: 200px;
+}
+
+select.classic {
+  background-image:
+    linear-gradient(45deg, transparent 50%, black 50%),
+    linear-gradient(135deg, black 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+
+.container-global-nft {
+  height: 100vh;
+}
+
+.container-global-nft .container-image-title-description {
+  margin-top: 64px;
+  display: flex;
+  margin-left: 64px;
+}
+
+.container-global-nft .container-title-description-button {
+  width: calc(100vw - 400px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-global-nft .container-title-description {
+ 
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container-footer .container-icon {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.icon-share-nft {
+  width: 2.5em !important;
+  height: 30px !important;
+}
+
+.icon-left {
+  border-right: black solid 3px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid black; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  margin-top: calc(80vh/2);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

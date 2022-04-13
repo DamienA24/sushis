@@ -115,6 +115,9 @@
   height: 1em;
 }
 
+/* .logo-icon {
+  vertical-align: middle !important;
+} */
 @media (max-width: 600px) {
   .grid {
     width: 100%;
