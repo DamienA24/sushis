@@ -84,7 +84,7 @@ function MyApp({ Component, pageProps }) {
     <div className="container-global">
       {!loading ? (
         currentAccount ? (
-          network !== "Polygon Mumbai Testnet" ? (
+          network === "Polygon Mumbai Testnet" ? (
             <div>
               {router.route === "/nft/[id]" ? null : (
                 <nav className="p-6">
