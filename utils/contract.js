@@ -2,8 +2,8 @@ import { ethers } from "ethers";
 
 import { nftaddress, nftmarketaddress } from "../config";
 
-import NFT from "../artifacts/contracts/NFT.sol/NFT.json";
-import Market from "../artifacts/contracts/NFTMarket.sol/NFTMarket.json";
+import NFT from "./NFT.json";
+import Market from "./NFTMarket.json";
 
 export function recoverProvider(ethereum) {
   //const provider = new ethers.providers.JsonRpcProvider();
